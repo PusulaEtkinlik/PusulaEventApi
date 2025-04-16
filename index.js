@@ -8,7 +8,9 @@ const usercode = process.env.NETGSM_USERCODE;
 const password = process.env.NETGSM_PASSWORD;
 const header = process.env.NETGSM_HEADER;
 
-app.use(cors());
+app.use(cors({
+  origin: "http://localhost:3000"
+}));
 app.use(express.json());
 
 app.post("/send-sms", async (req, res) => {
