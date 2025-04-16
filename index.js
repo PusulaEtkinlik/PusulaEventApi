@@ -9,7 +9,7 @@ const password = process.env.NETGSM_PASSWORD;
 const header = process.env.NETGSM_HEADER;
 
 app.use(cors({
-  origin: "http://localhost:3000"
+  origin: "https://pusulaeventweb.onrender.com"
 }));
 app.use(express.json());
 
